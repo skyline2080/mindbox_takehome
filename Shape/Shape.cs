@@ -9,7 +9,7 @@ public interface IArea {
 public sealed class Circle: IArea {
     public static Circle WithRadius(float radius) => new Circle(radius);
     public float Radius {get; }
-    public float Area => (float)(Math.PI * Radius * Radius);
+    public float Area => MathF.PI * Radius * Radius;
 
     Circle(float radius) => 
         Radius = 
@@ -34,12 +34,11 @@ public class Triangle: IArea {
         get {
             var p = (Leg1 + Leg2 + Leg3) / 2;
             return 
-                (float) 
-                    Math.Sqrt(
-                        (p) * 
-                        (p - Leg1) * 
-                        (p - Leg2) * 
-                        (p - Leg3));
+                MathF.Sqrt(
+                    (p) * 
+                    (p - Leg1) * 
+                    (p - Leg2) * 
+                    (p - Leg3));
         }
     }
 
