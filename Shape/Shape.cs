@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Shape;
+namespace Shape_ns;
 
 // решил использовать float, т.к. double предоставляет избыточную в данном случае точность
 

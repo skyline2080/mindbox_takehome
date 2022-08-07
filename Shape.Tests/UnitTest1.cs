@@ -1,5 +1,5 @@
 using Xunit;
-using Shape;
+using Shape_ns;
 using System;
 
 namespace Shape.Tests;
